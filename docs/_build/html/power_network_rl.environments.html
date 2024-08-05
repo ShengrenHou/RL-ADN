@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>power_network_rl.environments package &mdash; RL-ADN  documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="RL-ADN.power_network_rl.benckmark_algorithms package" href="power_network_rl.benckmark_algorithms.html" />
+    <link rel="prev" title="power_network_rl.DRL_algorithms package" href="power_network_rl.DRL_algorithms.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            RL-ADN
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">power_network_rl</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RL-ADN</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">power_network_rl</a></li>
+      <li class="breadcrumb-item active">power_network_rl.environments package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/power_network_rl.environments.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="power-network-rl-environments-package">
+<h1>power_network_rl.environments package<a class="headerlink" href="#power-network-rl-environments-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-power_network_rl.environments.Component_Battery">
+<span id="power-network-rl-environments-component-battery-module"></span><h2>power_network_rl.environments.Component_Battery module<a class="headerlink" href="#module-power_network_rl.environments.Component_Battery" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="power_network_rl.environments.Component_Battery.Battery">
+<em class="property">class </em><code class="sig-prename descclassname">power_network_rl.environments.Component_Battery.</code><code class="sig-name descname">Battery</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parameters</span></em><span class="sig-paren">)</span><a class="headerlink" href="#power_network_rl.environments.Component_Battery.Battery" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A simple battery model for energy storage and management.</p>
+<dl class="py attribute">
+<dt id="power_network_rl.environments.Component_Battery.Battery.capacity">
+<code class="sig-name descname">capacity</code><a class="headerlink" href="#power_network_rl.environments.Component_Battery.Battery.capacity" title="Permalink to this definition">¶</a></dt>
+<dd><p>The total energy capacity of the battery in kW.h.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="power_network_rl.environments.Component_Battery.Battery.max_soc">
+<code class="sig-name descname">max_soc</code><a class="headerlink" href="#power_network_rl.environments.Component_Battery.Battery.max_soc" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum state of charge (SOC) as a fraction of capacity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="power_network_rl.environments.Component_Battery.Battery.initial_soc">
+<code class="sig-name descname">initial_soc</code><a class="headerlink" href="#power_network_rl.environments.Component_Battery.Battery.initial_soc" title="Permalink to this definition">¶</a></dt>
+<dd><p>The initial state of charge as a fraction of capacity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="power_network_rl.environments.Component_Battery.Battery.min_soc">
+<code class="sig-name descname">min_soc</code><a class="headerlink" href="#power_network_rl.environments.Component_Battery.Battery.min_soc" title="Permalink to this definition">¶</a></dt>
+<dd><p>The minimum state of charge as a fraction of capacity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="power_network_rl.environments.Component_Battery.Battery.degradation">
+<code class="sig-name descname">degradation</code><a class="headerlink" href="#power_network_rl.environments.Component_Battery.Battery.degradation" title="Permalink to this definition">¶</a></dt>
+<dd><p>The cost of battery degradation per kW.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="power_network_rl.environments.Component_Battery.Battery.max_charge">
+<code class="sig-name descname">max_charge</code><a class="headerlink" href="#power_network_rl.environments.Component_Battery.Battery.max_charge" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum charging power of the battery in kW.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="power_network_rl.environments.Component_Battery.Battery.max_discharge">
+<code class="sig-name descname">max_discharge</code><a class="headerlink" href="#power_network_rl.environments.Component_Battery.Battery.max_discharge" title="Permalink to this definition">¶</a></dt>
+<dd><p>The maximum discharging power of the battery in kW.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="power_network_rl.environments.Component_Battery.Battery.efficiency">
+<code class="sig-name descname">efficiency</code><a class="headerlink" href="#power_network_rl.environments.Component_Battery.Battery.efficiency" title="Permalink to this definition">¶</a></dt>
+<dd><p>The efficiency of charging and discharging processes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="power_network_rl.environments.Component_Battery.Battery.current_soc">
+<code class="sig-name descname">current_soc</code><a class="headerlink" href="#power_network_rl.environments.Component_Battery.Battery.current_soc" title="Permalink to this definition">¶</a></dt>
+<dd><p>The current state of charge of the battery.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>parameters</strong> (<em>dict</em>) – A dictionary containing battery parameters.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Description:</dt><dd><p>This class simulates a simple battery for energy storage. It allows for charging and discharging
+operations while considering constraints like maximum/minimum state of charge, charging/discharging
+rates, and efficiency. It also calculates the cost associated with battery degradation.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="power_network_rl.environments.Component_Battery.Battery.SOC">
+<code class="sig-name descname">SOC</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#power_network_rl.environments.Component_Battery.Battery.SOC" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the current state of charge (SOC) of the battery.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The current SOC of the battery.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Description:</dt><dd><p>This method provides the current state of charge of the battery as a fraction of its total capacity.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="power_network_rl.environments.Component_Battery.Battery.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#power_network_rl.environments.Component_Battery.Battery.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets the state of charge (SOC) of the battery to its initial value.</p>
+<dl class="simple">
+<dt>Description:</dt><dd><p>This method is used to reset the battery’s state of charge to its initial value, typically used at the start of a new simulation or operational cycle.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="power_network_rl.environments.Component_Battery.Battery.step">
+<code class="sig-name descname">step</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">action_battery</span></em><span class="sig-paren">)</span><a class="headerlink" href="#power_network_rl.environments.Component_Battery.Battery.step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes a step of battery operation based on the given action.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>action_battery</strong> (<em>float</em>) – The action to be taken, typically representing the amount of energy to charge or discharge.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Description:</dt><dd><p>This method updates the state of charge (SOC) of the battery based on the given action. It calculates the
+energy change and updates the SOC while ensuring it stays within the defined minimum and maximum limits.
+The energy change is also used to calculate the cost associated with battery operation.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="power-network-rl-environments-environment-integrated-module">
+<h2>power_network_rl.environments.Environment_Integrated module<a class="headerlink" href="#power-network-rl-environments-environment-integrated-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-power_network_rl.environments">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-power_network_rl.environments" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="power_network_rl.DRL_algorithms.html" class="btn btn-neutral float-left" title="power_network_rl.DRL_algorithms package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="power_network_rl.benckmark_algorithms.html" class="btn btn-neutral float-right" title="RL-ADN.power_network_rl.benckmark_algorithms package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Shengren.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

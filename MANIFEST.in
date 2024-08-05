@@ -1,0 +1,5 @@
+include power_network_rl/data_sources/network_data/node_123/*.csv
+include power_network_rl/data_sources/network_data/node_25/*.csv
+include power_network_rl/data_sources/network_data/node_34/*.csv
+include power_network_rl/data_sources/network_data/node_69/*.csv
+include power_network_rl/data_sources/time_series_data/*.csv
