@@ -15,16 +15,13 @@
 ## Outline
 
   - [Overview](#overview)
-  - [Documentation](#documentation)
   - [File Structure](#file-structure)
   - [Installation](#installation)
   - [Tutorials](#tutorials)
   - [Publications](#publications)
   - [Citing RL-ADN](#citing-RL-ADN)
   - [LICENSE](#license)
-  
-## Documentation 
-under developing 
+
 
 ## File Structure
 
@@ -85,8 +82,6 @@ The main folder **RL-ADN** is shown below
     ├─environments
     │  │  battery.py
     │  │  env.py
-    │  │  
-    │  │
     │  │  __init__.py
     │
     ├─example
@@ -150,11 +145,7 @@ In the example folder:
 - `Tutorial_DDPG_training_using_RL_ADN.ipynb` shows a tutorial for training DDPG agents using RL-ADN step by step. 
 - `Customize_env.ipynb` shows a simple tutorial for users to customize their environment by using RL-ADN
 
-## Future work 
-Develop a data augmentation function by implementing a data generator for time-series data used for training algorithms.
 
-## Publications
-Preparing the manuscript
 
 ## Citing RL-ADN
 Preparing the manuscript
