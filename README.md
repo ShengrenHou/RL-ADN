@@ -1,4 +1,4 @@
-# RL-ADN: A Benchmark Framework for DRL-based Battery Energy Arbitrage in Distribution Networks
+# RL-ADN: A High-Performance Deep Reinforcement Learning Environment for Optimal Energy Storage Systems Dispatch in Active Distribution Networks
 
 
 
