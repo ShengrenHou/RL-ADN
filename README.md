@@ -13,4 +13,4 @@
 
 
 ## Detail 
-For more detail tutorial and explanation, please visit our WIKI page
+For more detail tutorial and explanation, please visit our [WIKI](https://github.com/ShengrenHou/RL-ADN/wiki)
